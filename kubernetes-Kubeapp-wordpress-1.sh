@@ -109,7 +109,7 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
-kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
+#kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
 sleep 60
 
