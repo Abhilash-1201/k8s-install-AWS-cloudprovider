@@ -111,6 +111,9 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 #kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
+curl https://docs.projectcalico.org/manifests/calico.yaml -O
+kubectl apply -f calico.yaml
+
 sleep 60
 
 kubectl get nodes
